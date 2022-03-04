@@ -38,6 +38,7 @@ const char* expected_servicedata[] = {
     "{\"brand\":\"Xiaomi\",\"model\":\"LYWSD03MMC\",\"model_id\":\"LYWSD03MMC_ATC\",\"tempc\":32.5,\"tempf\":90.5,\"hum\":62,\"batt\":81,\"volt\":2.939}",
     "{\"brand\":\"Xiaomi\",\"model\":\"LYWSD03MMC\",\"model_id\":\"LYWSD03MMC_PVVX\",\"tempc\":21.12,\"tempf\":70.016,\"hum\":50.53,\"batt\":100,\"volt\":3.143}",
     "{\"brand\":\"Qingping\",\"model\":\"Motion & Light\",\"model_id\":\"CGPR1\",\"lux\":0}",
+    "{\"brand\":\"AprilBrother\",\"model\":\"N03\",\"model_id\":\"ABSensor_N03\",\"batt\":100,\"tempc\":-2.625,\"hum\":63.5,\"lux\":350}",
 };
 
 const char* expected_mfg[] = {
@@ -131,6 +132,7 @@ const char* test_servicedata[][2] = {
     {"LYWSD03MMC_ATC", "a4c138d5d49801453e510b7b62"},
     {"LYWSD03MMC_PVVX", "5601cf38c1a44008bd13470c64cc0f"},
     {"Qingping Motion & Light", "0812443660342d580201530f0118090400000000"},
+    {"AprilBrother N03", "ab03aabbccddeeff64ebff7f005e01"},
 };
 
 TheengsDecoder::BLE_ID_NUM test_svcdata_id_num[]{

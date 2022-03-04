@@ -19,6 +19,7 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
+#include "devices/ABN03_json.h"
 #include "devices/CGD1_json.h"
 #include "devices/CGDK2_json.h"
 #include "devices/CGG1_json.h"
@@ -97,5 +98,6 @@ const char* _devices[][2] = {
     {_BM_V23_json, _BM_V23_json_props},
     {_MS_CDP_json, _MS_CDP_json_props},
     {_GAEN_json, _GAEN_json_props},
+    {_ABN03_json, _ABN03_json_props},
     {_SOLIS_6_json, _SOLIS_6_json_props},
 };
