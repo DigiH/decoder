@@ -71,6 +71,7 @@ const char* expected_mfg[] = {
 
 const char* expected_uuid[] = {
     "{\"brand\":\"Xiaomi\",\"model\":\"Miband\",\"model_id\":\"MiBand\",\"steps\":7842}",
+    "{\"brand\":\"Xiaomi\",\"model\":\"Miband\",\"model_id\":\"MiBand\",\"steps\":7842,\"act_bpm\":120}",
     "{\"brand\":\"Xiaomi\",\"model\":\"Mi_Smart_Scale\",\"model_id\":\"XMTZC01HM/XMTZC04HM\",\"weighing_mode\":\"person\",\"unit\":\"kg\",\"weight\":61.75}",
     "{\"brand\":\"Xiaomi\",\"model\":\"Mi_Smart_Scale\",\"model_id\":\"XMTZC01HM/XMTZC04HM\",\"weighing_mode\":\"object\",\"unit\":\"kg\",\"weight\":9.55}",
     "{\"brand\":\"Xiaomi\",\"model\":\"Mi_Smart_Scale\",\"model_id\":\"XMTZC01HM/XMTZC04HM\",\"weighing_mode\":\"person\",\"unit\":\"kg\",\"weight\":61.75}",
