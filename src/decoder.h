@@ -70,6 +70,7 @@ public:
     IBEACON,
     WS02,
     WS08,
+    H5055,
     H5075,
     H5072,
     H5102,
@@ -96,7 +97,7 @@ private:
   int data_length_is_valid(size_t data_len, size_t default_min, JsonArray& condition, int idx);
   std::string sanitizeJsonKey(const char* key_in);
 
-  size_t m_docMax = 7168;
+  size_t m_docMax = 14336;
   size_t m_minSvcDataLen = 20;
   size_t m_minMfgDataLen = 16;
 };

@@ -34,7 +34,8 @@
 #endif
 
 #ifdef UNIT_TESTING
-#  define TEST_MAX_DOC 16384UL
+// #  define TEST_MAX_DOC 16384UL
+#  define TEST_MAX_DOC 24576UL
 #  include <assert.h>
 static size_t peakDocSize = 0;
 #endif
