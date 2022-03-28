@@ -79,6 +79,9 @@ const char* expected_mfg[] = {
     "{\"brand\":\"BlueMaestro\",\"model\":\"TempoDisc\",\"model_id\":\"BM_V23\",\"tempc\":23.9,\"tempf\":75.02,\"dp\":10.8,\"hum\":43.5,\"volt\":2.56}",
     "{\"brand\":\"GENERIC\",\"model\":\"MS-CDP\",\"model_id\":\"MS-CDP\",\"device\":\"Windows 10 Desktop\",\"salt\":\"ac6d90ec\",\"hash\":\"0132b3204cd39c7ced3e48436ba15dc6\"}",
     "{\"brand\":\"Inkbird/Tenergy\",\"model\":\"iBBQ/SOLIS6\",\"model_id\":\"IBT-6XS/SOLIS-6\",\"tempc\":20,\"tempf\":68,\"tempc2\":20,\"tempf2\":68,\"tempc4\":21,\"tempf4\":69.8}",
+    "{\"brand\":\"Oral-B\",\"model\":\"BT Toothbrush\",\"model_id\":\"Oral-B_BT\",\"state\":\"idle\",\"mode\":\"daily clean\",\"sector\":\"sector 1\",\"pressure\":10,\"time\":70}",
+    "{\"brand\":\"Oral-B\",\"model\":\"BT Toothbrush\",\"model_id\":\"Oral-B_BT\",\"state\":\"running\",\"mode\":\"whitening\",\"sector\":\"sector 4\",\"pressure\":20,\"time\":135}",
+    "{\"brand\":\"Oral-B\",\"model\":\"BT Toothbrush\",\"model_id\":\"Oral-B_BT\",\"state\":\"running\",\"mode\":\"daily clean\",\"sector\":\"sector 2\",\"pressure\":50,\"time\":34}",
 };
 
 const char* expected_uuid_mfgsvcdata[] = {
@@ -232,6 +235,9 @@ const char* test_mfgdata[][3] = {
     {"BM_V23", "V23", "330117560e10177000ef01b3006c0100"},
     {"MS-CDP", "Windows 10 Desktop", "060001092002ac6d90ec0132b3204cd39c7ced3e48436ba15dc6314778"},
     {"SOLIS_6", "iBBQ", "000000000cb2b71b5b18c800c800f6ffd200f6fff6ff"},
+    {"Braun", "Toothbrush", "dc00010105020a010a0101"},
+    {"Braun", "Toothbrush", "dc000101050314020f0404"},
+    {"Braun", "Toothbrush", "dc000471050332002201020d04"},
 };
 
 TheengsDecoder::BLE_ID_NUM test_mfgdata_id_num[]{
@@ -269,6 +275,9 @@ TheengsDecoder::BLE_ID_NUM test_mfgdata_id_num[]{
   TheengsDecoder::BLE_ID_NUM::BM_V23,
   TheengsDecoder::BLE_ID_NUM::MS_CDP,
   TheengsDecoder::BLE_ID_NUM::IBT6XS_SOLIS,
+  TheengsDecoder::BLE_ID_NUM::ORALB,
+  TheengsDecoder::BLE_ID_NUM::ORALB,
+  TheengsDecoder::BLE_ID_NUM::ORALB,
 };
 
 // uuid test input [test name] [uuid] [manufacturer data] [service data]
