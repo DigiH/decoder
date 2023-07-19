@@ -74,6 +74,7 @@ public:
     XMTZC04HMLB,
     XMTZC05HMKG,
     XMTZC05HMLB,
+    EUFYC1P1,
     TPMS,
     TPMSBR,
     KKM_K6P,

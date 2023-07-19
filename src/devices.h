@@ -60,6 +60,7 @@
 #include "devices/XMTZC04HMLB_json.h"
 #include "devices/XMTZC05HMKG_json.h"
 #include "devices/XMTZC05HMLB_json.h"
+#include "devices/EufyC1P1_json.h"
 #include "devices/Mokobeacon_json.h"
 #include "devices/Mikrotik_json.h"
 #include "devices/RDL52832_json.h"
@@ -170,6 +171,7 @@ const char* _devices[][2] = {
     {_XMTZC04HMLB_json, _XMTZC04HMLB_json_props},
     {_XMTZC05HMKG_json, _XMTZC05HMKG_json_props},
     {_XMTZC05HMLB_json, _XMTZC05HMLB_json_props},
+    {_EUFYC1P1_json, _EUFYC1P1_json_props},
     {_TPMS_json, _TPMS_json_props},
     {_TPMSBR_json, _TPMSBR_json_props},
     {_KKM_K6P_json, _KKM_K6P_json_props},

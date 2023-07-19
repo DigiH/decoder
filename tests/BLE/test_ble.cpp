@@ -237,6 +237,9 @@ const char* expected_mfg[] = {
     "{\"brand\":\"Victron Energy\",\"model\":\"Smart Battery Sense\",\"model_id\":\"VICTSBS\",\"type\":\"ENRG\",\"track\":true,\"volt\":12.99,\"tempc\":17.5,\"tempf\":63.5,\"alarm_reason\":0}",
     "{\"brand\":\"Victron Energy\",\"model\":\"Smart Battery Sense\",\"model_id\":\"VICTSBS\",\"type\":\"ENRG\",\"track\":true,\"volt\":14.01,\"tempc\":17.5,\"tempf\":63.5,\"alarm_reason\":0}",
     "{\"brand\":\"Victron Energy\",\"model\":\"Smart Battery Sense\",\"model_id\":\"VICTSBS\",\"type\":\"ENRG\",\"track\":true,\"volt\":12.22,\"tempc\":22.5,\"tempf\":72.5,\"alarm_reason\":0}",
+    "{\"brand\":\"Eufy\",\"model\":\"Smart Scale\",\"model_id\":\"C1/P1\",\"type\":\"SCALE\",\"cidc\":false,\"weight\":94.9,\"unit\":\"kg\",\"impedance\":490,\"batt\":74,\"mac\":\"AA:BB:CC:DD:EE:FF\"}",
+    "{\"brand\":\"Eufy\",\"model\":\"Smart Scale\",\"model_id\":\"C1/P1\",\"type\":\"SCALE\",\"cidc\":false,\"weight\":200.620693,\"unit\":\"lb\",\"impedance\":477,\"batt\":74,\"mac\":\"AA:BB:CC:DD:EE:FF\"}",
+    "{\"brand\":\"Eufy\",\"model\":\"Smart Scale\",\"model_id\":\"C1/P1\",\"type\":\"SCALE\",\"cidc\":false,\"weight\":\"weight limit exceeded\",\"batt\":74,\"mac\":\"AA:BB:CC:DD:EE:FF\"}",
 };
 
 const char* expected_name_uuid_mfgsvcdata[] = {
@@ -824,6 +827,9 @@ const char* test_mfgdata[][3] = {
     {"Victron Smart Battery Sense", "",                         "e1021180a5a302ffff7bffff130500008971feff7fffffffff"},
     {"Victron Smart Battery Sense", "",                         "e1021180a5a302ffff7bffff790500008971feff7fffffffff"},
     {"Victron Smart Battery Sense", "",                         "e1021100a4a302ffff7cffffc60400007d73feff7fffffffff"},
+    {"Eufy", "eufy T9146", "aabbccddeeffcf2413122560655a0000914a9146"},
+    {"Eufy", "eufy T9146", "aabbccddeeffcfa2128c2360655a0100914a9146"},
+    {"Eufy", "eufy T9146", "aabbccddeeffcfa2128c2360655a0102914a9146"},
 };
 
 TheengsDecoder::BLE_ID_NUM test_mfgdata_id_num[]{
@@ -1044,6 +1050,9 @@ TheengsDecoder::BLE_ID_NUM test_mfgdata_id_num[]{
     TheengsDecoder::BLE_ID_NUM::VICTSBS,
     TheengsDecoder::BLE_ID_NUM::VICTSBS,
     TheengsDecoder::BLE_ID_NUM::VICTSBS,
+    TheengsDecoder::BLE_ID_NUM::EUFYC1P1,
+    TheengsDecoder::BLE_ID_NUM::EUFYC1P1,
+    TheengsDecoder::BLE_ID_NUM::EUFYC1P1,
 };
 
 // uuid test input [test name] [device name] [uuid] [manufacturer data] [service data]
